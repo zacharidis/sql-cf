@@ -22,3 +22,11 @@ SELECT distinct production.products.product_name , production.products.model_yea
 from production.products ,sales.orders  
 order by model_year asc
    
+   /** erotima 4o 
+   na emfanistoun ta proionta mas apo to akrivotero sto fthinotero 
+
+   */
+
+   SELECT distinct production.products.product_name as "Onoma Proiontos" , production.products.list_price as "timi"
+from production.products ,sales.orders  
+order by list_price desc
