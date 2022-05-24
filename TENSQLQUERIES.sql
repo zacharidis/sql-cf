@@ -64,3 +64,20 @@ WHERE
 
 sales.customers.customer_id = sales.orders.customer_id
 and sales.order_items.list_price > 1000
+
+/* ερωτημα 8ο  ολες οι παραγγελιες των πελατων μας*/ 
+
+select 
+sales.customers.customer_id as ID, 
+sales.customers.first_name as FIRSTNAME, 
+sales.customers.last_name as LASTNAME
+
+
+from 
+sales.customers,
+sales.orders 
+
+		 
+where sales.customers.customer_id = sales.orders.customer_id
+order by sales.orders.customer_id;
+
